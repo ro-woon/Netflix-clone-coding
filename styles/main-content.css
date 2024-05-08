@@ -47,7 +47,7 @@
             rgba(0, 0, 0, 0.3) 50%, 
             transparent 100%
         ),
-        url('/Netflix/assets/images/banner.jpg');
+        url('../assets/images/banner.jpg');
     background-size: cover;
     background-position: center;
 }
