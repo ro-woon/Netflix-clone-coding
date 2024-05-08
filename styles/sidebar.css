@@ -1,0 +1,59 @@
+.sidebar {
+    display: flex;   
+    position: fixed;  
+    flex-direction: column; 
+    justify-content: center; 
+    height: 100%;
+    width: 100px;
+    align-items: center; 
+    background-color: black;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 80px;
+    
+    align-items: center;
+}
+
+.sidebar-item {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+}
+
+.sidebar-item:hover {
+    background-color: gray;
+}
+
+#calendar {
+    position: relative;
+}
+
+#calendar::after {
+    content: ""; 
+    display: block; 
+    position: absolute;  
+    bottom: 18px; 
+    border-bottom: 3px solid red; 
+    height: 0; 
+    width: 30px;
+}
+
+#calendar::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(80%);
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+

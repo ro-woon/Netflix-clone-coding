@@ -1,0 +1,166 @@
+.head-logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.head-logo {
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+
+}
+.headline {
+    margin-top: 100px;
+    margin-left: 20px;
+    width: 600px;
+}
+
+.headline h1 {
+  font-weight: 900;
+  font-size: 5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.description-main-content {
+    font-size: 1.2rem;
+    width: 100%;
+    height: 60%;
+}
+
+.video-content {
+    width: 100vw;
+    height: 100vh;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; 
+    background-image: 
+        linear-gradient(
+            to bottom, 
+            transparent 60%,
+            rgba(0, 0, 0, 1) 100% 
+        ),
+        linear-gradient(
+            to right, 
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 0.3) 50%, 
+            transparent 100%
+        ),
+        url('/Netflix/assets/images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.headline-description {
+    font-weight: 200;
+    color: rgb(160, 160, 160);
+    letter-spacing: 1px;
+}
+
+.headline-description span {
+    font-weight: 500;
+    color: rgb(7, 196, 0);
+}
+
+.main-description h3 {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.main-description p {
+    font-weight: 200;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: 2px;
+}
+
+.recommeded-video-item {
+    position: relative;
+    left: 5px;
+    top: 0;
+}
+
+
+
+.recommeded-video-logo {
+    position: absolute;
+    top: -8px;
+    left: -4px;
+    width: 70px;
+    height: 70px;
+
+}
+
+.recommeded-video-image {
+    width: 200px;
+    height: 290px;
+    object-fit: cover;
+}
+
+.recommeded-content {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    margin-left: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    overflow-x: auto;
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+
+.recommeded-content p {
+    position: absolute;
+    top: -30px;
+    left: 5px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.recommeded-video-box {
+    display: none;
+    position: absolute;
+    top: -5px;
+    width: 110%;
+    height: 110%;
+    background-color: white;
+}
+
+.recommeded-video-box p{
+    position: absolute;
+    color: black;
+    top: 280px;
+    font-size: 19px;
+    font-weight: 900;
+    left: 60px;
+}
+
+
+.recommeded-video-box img {
+    position: absolute;
+    left: -25px;
+    width: 20px;
+}
+
+.recommeded-video {
+    position: relative;
+    width: 190px;
+    height: 300px;
+    transition: transform 0.2s ease-out;
+}
+
+.recommeded-video:hover {
+    transform: scale(1.02);
+    .recommeded-video-box {
+        display: unset;
+    }
+}
+
+#Netflix-long {
+    position: fixed;
+    z-index: 1;
+    width: 300px;
+    right: 100px;
+    bottom: -40px;
+}
